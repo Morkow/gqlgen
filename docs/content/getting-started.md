@@ -14,14 +14,14 @@ The aim for this tutorial is to build a "todo" graphql server that can:
  - create new todos
  - mark off todos as they are completed
 
-You can find the finished code for this tutorial [here](https://github.com/vektah/gqlgen-tutorials/tree/master/gettingstarted)
+You can find the finished code for this tutorial [here](https://github.com/Morkow/gqlgen-tutorials/tree/master/gettingstarted)
 
 ## Install gqlgen
 
 Assuming you already have a working [go environment](https://golang.org/doc/install) you can simply go get:
 
 ```sh
-go get -u github.com/99designs/gqlgen github.com/vektah/gorunpkg
+go get -u github.com/Morkow/gqlgen github.com/Morkow/gorunpkg
 ```
 
 ## Building the server
@@ -92,13 +92,13 @@ And then tell gqlgen to use this new struct by adding this to the gqlgen.yml:
 ```yaml
 models:
   Todo:
-    model: github.com/vektah/gqlgen-tutorials/gettingstarted.Todo
+    model: github.com/Morkow/gqlgen-tutorials/gettingstarted.Todo
 ```
 
 and regenerate by running
 ```bash
 $ gqlgen -v
-Unable to bind Todo.user to github.com/vektah/gqlgen-tutorials/gettingstarted.Todo
+Unable to bind Todo.user to github.com/Morkow/gqlgen-tutorials/gettingstarted.Todo
 	no method named user
 	no field named user
 	Adding resolver method
@@ -162,7 +162,7 @@ Now we just need to fill in the `not implemented` parts
 
 `graph/graph.go`
 ```go
-//go:generate gorunpkg github.com/99designs/gqlgen
+//go:generate gorunpkg github.com/Morkow/gqlgen
 
 package gettingstarted
 
@@ -251,7 +251,7 @@ First uninstall the global version we grabbed earlier. This is a good way to pre
 
 ```bash
 rm ~/go/bin/gqlgen
-rm -rf ~/go/src/github.com/99designs/gqlgen
+rm -rf ~/go/src/github.com/Morkow/gqlgen
 ``` 
 
 Next install gorunpkg, its kind of like npx but only searches vendor.
@@ -263,7 +263,7 @@ dep ensure
 
 At the top of our resolvers.go a go generate command was added that looks like this:
 ```go
-//go:generate gorunpkg github.com/99designs/gqlgen
+//go:generate gorunpkg github.com/Morkow/gqlgen
 ```
 
 This magic comment tells `go generate` what command to run when we want to regenerate our code. to do so run:

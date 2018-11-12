@@ -10,29 +10,29 @@ resolver:
 
 models:
   It:
-    model: "github.com/99designs/gqlgen/codegen/testserver/introspection.It"
+    model: "github.com/Morkow/gqlgen/codegen/testserver/introspection.It"
   InvalidIdentifier:
-    model: "github.com/99designs/gqlgen/codegen/testserver/invalid-packagename.InvalidIdentifier"
+    model: "github.com/Morkow/gqlgen/codegen/testserver/invalid-packagename.InvalidIdentifier"
   Changes:
     model: "map[string]interface{}"
   RecursiveInputSlice:
-    model: "github.com/99designs/gqlgen/codegen/testserver.RecursiveInputSlice"
+    model: "github.com/Morkow/gqlgen/codegen/testserver.RecursiveInputSlice"
   Shape:
-    model: "github.com/99designs/gqlgen/codegen/testserver.Shape"
+    model: "github.com/Morkow/gqlgen/codegen/testserver.Shape"
   ShapeUnion:
-    model: "github.com/99designs/gqlgen/codegen/testserver.ShapeUnion"
+    model: "github.com/Morkow/gqlgen/codegen/testserver.ShapeUnion"
   Circle:
-    model: "github.com/99designs/gqlgen/codegen/testserver.Circle"
+    model: "github.com/Morkow/gqlgen/codegen/testserver.Circle"
   Rectangle:
-    model: "github.com/99designs/gqlgen/codegen/testserver.Rectangle"
+    model: "github.com/Morkow/gqlgen/codegen/testserver.Rectangle"
   ForcedResolver:
-    model: "github.com/99designs/gqlgen/codegen/testserver.ForcedResolver"
+    model: "github.com/Morkow/gqlgen/codegen/testserver.ForcedResolver"
     fields:
       field: { resolver: true }
   User:
     fields:
       friends: { resolver: true }
   Error:
-    model: "github.com/99designs/gqlgen/codegen/testserver.Error"
+    model: "github.com/Morkow/gqlgen/codegen/testserver.Error"
   EmbeddedPointer:
-    model: "github.com/99designs/gqlgen/codegen/testserver.EmbeddedPointerModel"
+    model: "github.com/Morkow/gqlgen/codegen/testserver.EmbeddedPointerModel"

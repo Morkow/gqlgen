@@ -8,11 +8,11 @@ import (
 
 	// Import and ignore the ambient imports listed below so dependency managers
 	// don't prune unused code for us. Both lists should be kept in sync.
-	_ "github.com/99designs/gqlgen/graphql"
-	_ "github.com/99designs/gqlgen/graphql/introspection"
-	"github.com/99designs/gqlgen/internal/gopath"
-	_ "github.com/vektah/gqlparser"
-	_ "github.com/vektah/gqlparser/ast"
+	_ "github.com/Morkow/gqlgen/graphql"
+	_ "github.com/Morkow/gqlgen/graphql/introspection"
+	"github.com/Morkow/gqlgen/internal/gopath"
+	_ "github.com/Morkow/gqlparser"
+	_ "github.com/Morkow/gqlparser/ast"
 )
 
 // These imports are referenced by the generated code, and are assumed to have the
@@ -28,10 +28,10 @@ var ambientImports = []string{
 	"errors",
 	"bytes",
 
-	"github.com/vektah/gqlparser",
-	"github.com/vektah/gqlparser/ast",
-	"github.com/99designs/gqlgen/graphql",
-	"github.com/99designs/gqlgen/graphql/introspection",
+	"github.com/Morkow/gqlparser",
+	"github.com/Morkow/gqlparser/ast",
+	"github.com/Morkow/gqlgen/graphql",
+	"github.com/Morkow/gqlgen/graphql/introspection",
 }
 
 func buildImports(types NamedTypes, destDir string) *Imports {

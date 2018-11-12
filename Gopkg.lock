@@ -156,7 +156,7 @@
 [[projects]]
   branch = "master"
   digest = "1:3684f335059f8441260c3e949c0b99de97ea1057ecc493fdbd72ff3c27863277"
-  name = "github.com/vektah/dataloaden"
+  name = "github.com/Morkow/dataloaden"
   packages = ["."]
   pruneopts = "UT"
   revision = "314ac81052eedc03ac0a79bdc89d05a49a2a5814"
@@ -164,7 +164,7 @@
 [[projects]]
   branch = "master"
   digest = "1:7fa8a2105f0b0853395a85d3dd8ef1475c44919374c6496dba7b987586edaced"
-  name = "github.com/vektah/gqlparser"
+  name = "github.com/Morkow/gqlparser"
   packages = [
     ".",
     "ast",
@@ -243,12 +243,12 @@
     "github.com/stretchr/testify/assert",
     "github.com/stretchr/testify/require",
     "github.com/urfave/cli",
-    "github.com/vektah/dataloaden",
-    "github.com/vektah/gqlparser",
-    "github.com/vektah/gqlparser/ast",
-    "github.com/vektah/gqlparser/gqlerror",
-    "github.com/vektah/gqlparser/parser",
-    "github.com/vektah/gqlparser/validator",
+    "github.com/Morkow/dataloaden",
+    "github.com/Morkow/gqlparser",
+    "github.com/Morkow/gqlparser/ast",
+    "github.com/Morkow/gqlparser/gqlerror",
+    "github.com/Morkow/gqlparser/parser",
+    "github.com/Morkow/gqlparser/validator",
     "golang.org/x/tools/go/ast/astutil",
     "golang.org/x/tools/go/loader",
     "golang.org/x/tools/imports",

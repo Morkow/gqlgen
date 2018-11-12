@@ -1,8 +1,8 @@
 package complexity
 
 import (
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlparser/ast"
 )
 
 func Calculate(es graphql.ExecutableSchema, op *ast.OperationDefinition, vars map[string]interface{}) int {

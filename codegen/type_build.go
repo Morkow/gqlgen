@@ -4,7 +4,7 @@ import (
 	"go/types"
 	"strings"
 
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlparser/ast"
 	"golang.org/x/tools/go/loader"
 )
 
@@ -18,7 +18,7 @@ func (cfg *Config) buildNamedTypes() NamedTypes {
 			t.IsUserDefined = true
 			t.Package, t.GoType = pkgAndType(userEntry.Model)
 		} else if t.IsScalar {
-			t.Package = "github.com/99designs/gqlgen/graphql"
+			t.Package = "github.com/Morkow/gqlgen/graphql"
 			t.GoType = "String"
 		}
 

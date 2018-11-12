@@ -8,7 +8,7 @@ import (
 	"text/template"
 	"unicode"
 
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlparser/ast"
 )
 
 type GoFieldType int

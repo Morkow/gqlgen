@@ -3,7 +3,7 @@ package graphql
 import (
 	"context"
 
-	"github.com/vektah/gqlparser/gqlerror"
+	"github.com/Morkow/gqlparser/gqlerror"
 )
 
 type ErrorPresenterFunc func(context.Context, error) *gqlerror.Error

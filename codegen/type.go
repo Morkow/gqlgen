@@ -4,7 +4,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlparser/ast"
 )
 
 type NamedTypes map[string]*NamedType

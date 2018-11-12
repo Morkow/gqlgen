@@ -3,7 +3,7 @@ version: "{build}"
 # Source Config
 
 skip_branch_with_pr: true
-clone_folder: c:\gopath\src\github.com\99designs\gqlgen
+clone_folder: c:\gopath\src\github.com\Morkow\gqlgen
 
 # Build host
 
@@ -31,7 +31,7 @@ build: false
 deploy: false
 
 test_script:
-  - go get -u github.com/vektah/gorunpkg github.com/golang/dep/cmd/dep
+  - go get -u github.com/Morkow/gorunpkg github.com/golang/dep/cmd/dep
   - dep ensure -vendor-only
   - go generate ./...
   - go test -timeout 20m ./...
@@ -40,7 +40,7 @@ test_script:
   - rd /s /q vendor
   - go get ./...
   - go install
-  - cd c:\gopath\src\github.com\99designs\
+  - cd c:\gopath\src\github.com\Morkow\
   - mkdir init-project
   - cd init-project
   - gqlgen init

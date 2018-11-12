@@ -4,8 +4,8 @@ import (
 	"go/types"
 	"sort"
 
+	"github.com/Morkow/gqlparser/ast"
 	"github.com/pkg/errors"
-	"github.com/vektah/gqlparser/ast"
 	"golang.org/x/tools/go/loader"
 )
 

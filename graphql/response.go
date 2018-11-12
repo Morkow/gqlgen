@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/vektah/gqlparser/gqlerror"
+	"github.com/Morkow/gqlparser/gqlerror"
 )
 
 // Errors are intentionally serialized first based on the advice in

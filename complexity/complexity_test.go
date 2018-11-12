@@ -5,10 +5,10 @@ import (
 	"math"
 	"testing"
 
-	"github.com/99designs/gqlgen/graphql"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlparser"
+	"github.com/Morkow/gqlparser/ast"
 	"github.com/stretchr/testify/require"
-	"github.com/vektah/gqlparser"
-	"github.com/vektah/gqlparser/ast"
 )
 
 var schema = gqlparser.MustLoadSchema(

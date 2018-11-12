@@ -3,8 +3,8 @@ package introspection
 import (
 	"testing"
 
+	"github.com/Morkow/gqlparser/ast"
 	"github.com/stretchr/testify/require"
-	"github.com/vektah/gqlparser/ast"
 )
 
 func TestType(t *testing.T) {

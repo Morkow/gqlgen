@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/handler"
-	"github.com/99designs/gqlgen/integration"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlgen/handler"
+	"github.com/Morkow/gqlgen/integration"
+	"github.com/Morkow/gqlparser/gqlerror"
 	"github.com/pkg/errors"
-	"github.com/vektah/gqlparser/gqlerror"
 )
 
 const defaultPort = "8080"

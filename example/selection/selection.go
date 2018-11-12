@@ -1,4 +1,4 @@
-//go:generate gorunpkg github.com/99designs/gqlgen
+//go:generate gorunpkg github.com/Morkow/gqlgen
 
 package selection
 
@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlparser/ast"
 )
 
 type Resolver struct{}

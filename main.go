@@ -1,6 +1,6 @@
 package main
 
-import "github.com/99designs/gqlgen/cmd"
+import "github.com/Morkow/gqlgen/cmd"
 
 func main() {
 	cmd.Execute()

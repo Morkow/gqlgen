@@ -9,12 +9,12 @@ import (
 	"net/http"
 	"sync"
 
-	"github.com/99designs/gqlgen/graphql"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlparser"
+	"github.com/Morkow/gqlparser/ast"
+	"github.com/Morkow/gqlparser/gqlerror"
+	"github.com/Morkow/gqlparser/validator"
 	"github.com/gorilla/websocket"
-	"github.com/vektah/gqlparser"
-	"github.com/vektah/gqlparser/ast"
-	"github.com/vektah/gqlparser/gqlerror"
-	"github.com/vektah/gqlparser/validator"
 )
 
 const (

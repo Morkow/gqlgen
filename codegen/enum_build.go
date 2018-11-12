@@ -4,8 +4,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/99designs/gqlgen/codegen/templates"
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlgen/codegen/templates"
+	"github.com/Morkow/gqlparser/ast"
 )
 
 func (cfg *Config) buildEnums(types NamedTypes) []Enum {

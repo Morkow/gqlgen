@@ -8,9 +8,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/99designs/gqlgen/internal/gopath"
+	"github.com/Morkow/gqlgen/internal/gopath"
+	"github.com/Morkow/gqlparser/ast"
 	"github.com/pkg/errors"
-	"github.com/vektah/gqlparser/ast"
 	"gopkg.in/yaml.v2"
 )
 

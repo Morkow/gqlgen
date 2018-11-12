@@ -3,7 +3,7 @@ package introspection
 import (
 	"strings"
 
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlparser/ast"
 )
 
 type Type struct {

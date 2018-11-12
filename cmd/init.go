@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/99designs/gqlgen/codegen"
+	"github.com/Morkow/gqlgen/codegen"
 	"github.com/pkg/errors"
 	"github.com/urfave/cli"
 	"gopkg.in/yaml.v2"

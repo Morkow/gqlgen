@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/99designs/gqlgen/example/scalars"
-	"github.com/99designs/gqlgen/handler"
+	"github.com/Morkow/gqlgen/example/scalars"
+	"github.com/Morkow/gqlgen/handler"
 )
 
 func main() {

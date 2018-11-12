@@ -16,7 +16,7 @@ When editing docs run `hugo serve` and a live reload server will start, then nav
 
 ## Publishing docs
 
-**Requires 99designs aws-vault access**
+**Requires Morkow aws-vault access**
 
 run `./publish.sh` to make the docs live.
 

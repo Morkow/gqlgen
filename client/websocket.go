@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/Morkow/gqlparser/gqlerror"
 	"github.com/gorilla/websocket"
-	"github.com/vektah/gqlparser/gqlerror"
 )
 
 const (

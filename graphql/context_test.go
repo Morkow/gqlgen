@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
+	"github.com/Morkow/gqlparser/ast"
 	"github.com/stretchr/testify/assert"
-	"github.com/vektah/gqlparser/ast"
 )
 
 func TestRequestContext_GetErrors(t *testing.T) {

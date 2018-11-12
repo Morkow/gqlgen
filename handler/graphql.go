@@ -8,14 +8,14 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/99designs/gqlgen/complexity"
-	"github.com/99designs/gqlgen/graphql"
+	"github.com/Morkow/gqlgen/complexity"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlparser/ast"
+	"github.com/Morkow/gqlparser/gqlerror"
+	"github.com/Morkow/gqlparser/parser"
+	"github.com/Morkow/gqlparser/validator"
 	"github.com/gorilla/websocket"
 	"github.com/hashicorp/golang-lru"
-	"github.com/vektah/gqlparser/ast"
-	"github.com/vektah/gqlparser/gqlerror"
-	"github.com/vektah/gqlparser/parser"
-	"github.com/vektah/gqlparser/validator"
 )
 
 type params struct {

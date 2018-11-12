@@ -86,7 +86,7 @@ func (cfg *Config) resolver() (*ResolverBuild, error) {
 	namedTypes := cfg.buildNamedTypes()
 	imports := buildImports(namedTypes, destDir)
 	imports.add(cfg.Exec.ImportPath())
-	imports.add("github.com/99designs/gqlgen/handler") // avoid import github.com/vektah/gqlgen/handler
+	imports.add("github.com/Morkow/gqlgen/handler") // avoid import github.com/Morkow/gqlgen/handler
 
 	cfg.bindTypes(imports, namedTypes, destDir, prog)
 
@@ -117,7 +117,7 @@ func (cfg *Config) server(destDir string) *ServerBuild {
 	imports.add("log")
 	imports.add("net/http")
 	imports.add("os")
-	imports.add("github.com/99designs/gqlgen/handler")
+	imports.add("github.com/Morkow/gqlgen/handler")
 
 	return &ServerBuild{
 		PackageName:         cfg.Resolver.Package,

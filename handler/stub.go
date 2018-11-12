@@ -3,9 +3,9 @@ package handler
 import (
 	"context"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/vektah/gqlparser"
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlparser"
+	"github.com/Morkow/gqlparser/ast"
 )
 
 type executableSchemaStub struct {

@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/99designs/gqlgen/example/starwars"
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/handler"
+	"github.com/Morkow/gqlgen/example/starwars"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlgen/handler"
 )
 
 func main() {

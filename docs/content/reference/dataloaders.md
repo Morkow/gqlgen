@@ -75,12 +75,12 @@ What we need is a way to group up all of those concurrent requests, take out any
 store them in case they are needed later on in request. The dataloader is just that, a request-scoped 
 batching and caching solution popularised by [facebook](https://github.com/facebook/dataloader). 
 
-We're going to use [dataloaden](https://github.com/vektah/dataloaden) to build our dataloaders. 
+We're going to use [dataloaden](https://github.com/Morkow/dataloaden) to build our dataloaders.
 In languages with generics, we could probably just create a DataLoader<User>, but golang 
 doesnt have generics. Instead we generate the code manually for our instance. 
 
 ```bash
-go get github.com/vektah/dataloaden
+go get github.com/Morkow/dataloaden
 
 dataloaden github.com/full/package/name.User
 ```
@@ -152,4 +152,4 @@ The generated UserLoader has a few other useful methods on it:
  - `LoadAll(keys)`: If you know up front you want a bunch users
  - `Prime(key, user)`: Used to sync state between similar loaders (usersById, usersByNote)
 
-You can see the full working example [here](https://github.com/vektah/gqlgen-tutorials/tree/master/dataloader)
+You can see the full working example [here](https://github.com/Morkow/gqlgen-tutorials/tree/master/dataloader)

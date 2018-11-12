@@ -3,7 +3,7 @@ package codegen
 import (
 	"sort"
 
-	"github.com/vektah/gqlparser/ast"
+	"github.com/Morkow/gqlparser/ast"
 	"golang.org/x/tools/go/loader"
 )
 

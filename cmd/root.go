@@ -6,8 +6,8 @@ import (
 	"log"
 	"os"
 
-	"github.com/99designs/gqlgen/graphql"
-	"github.com/99designs/gqlgen/internal/gopath"
+	"github.com/Morkow/gqlgen/graphql"
+	"github.com/Morkow/gqlgen/internal/gopath"
 	"github.com/urfave/cli"
 )
 

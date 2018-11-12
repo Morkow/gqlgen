@@ -7,11 +7,11 @@ import (
 	"regexp"
 	"syscall"
 
-	"github.com/99designs/gqlgen/codegen/templates"
+	"github.com/Morkow/gqlgen/codegen/templates"
+	"github.com/Morkow/gqlparser"
+	"github.com/Morkow/gqlparser/ast"
+	"github.com/Morkow/gqlparser/gqlerror"
 	"github.com/pkg/errors"
-	"github.com/vektah/gqlparser"
-	"github.com/vektah/gqlparser/ast"
-	"github.com/vektah/gqlparser/gqlerror"
 )
 
 func Generate(cfg Config) error {
@@ -127,19 +127,19 @@ func (cfg *Config) normalize() error {
 	}
 
 	builtins := TypeMap{
-		"__Directive":  {Model: "github.com/99designs/gqlgen/graphql/introspection.Directive"},
-		"__Type":       {Model: "github.com/99designs/gqlgen/graphql/introspection.Type"},
-		"__Field":      {Model: "github.com/99designs/gqlgen/graphql/introspection.Field"},
-		"__EnumValue":  {Model: "github.com/99designs/gqlgen/graphql/introspection.EnumValue"},
-		"__InputValue": {Model: "github.com/99designs/gqlgen/graphql/introspection.InputValue"},
-		"__Schema":     {Model: "github.com/99designs/gqlgen/graphql/introspection.Schema"},
-		"Int":          {Model: "github.com/99designs/gqlgen/graphql.Int"},
-		"Float":        {Model: "github.com/99designs/gqlgen/graphql.Float"},
-		"String":       {Model: "github.com/99designs/gqlgen/graphql.String"},
-		"Boolean":      {Model: "github.com/99designs/gqlgen/graphql.Boolean"},
-		"ID":           {Model: "github.com/99designs/gqlgen/graphql.ID"},
-		"Time":         {Model: "github.com/99designs/gqlgen/graphql.Time"},
-		"Map":          {Model: "github.com/99designs/gqlgen/graphql.Map"},
+		"__Directive":  {Model: "github.com/Morkow/gqlgen/graphql/introspection.Directive"},
+		"__Type":       {Model: "github.com/Morkow/gqlgen/graphql/introspection.Type"},
+		"__Field":      {Model: "github.com/Morkow/gqlgen/graphql/introspection.Field"},
+		"__EnumValue":  {Model: "github.com/Morkow/gqlgen/graphql/introspection.EnumValue"},
+		"__InputValue": {Model: "github.com/Morkow/gqlgen/graphql/introspection.InputValue"},
+		"__Schema":     {Model: "github.com/Morkow/gqlgen/graphql/introspection.Schema"},
+		"Int":          {Model: "github.com/Morkow/gqlgen/graphql.Int"},
+		"Float":        {Model: "github.com/Morkow/gqlgen/graphql.Float"},
+		"String":       {Model: "github.com/Morkow/gqlgen/graphql.String"},
+		"Boolean":      {Model: "github.com/Morkow/gqlgen/graphql.Boolean"},
+		"ID":           {Model: "github.com/Morkow/gqlgen/graphql.ID"},
+		"Time":         {Model: "github.com/Morkow/gqlgen/graphql.Time"},
+		"Map":          {Model: "github.com/Morkow/gqlgen/graphql.Map"},
 	}
 
 	if cfg.Models == nil {
@@ -153,7 +153,7 @@ func (cfg *Config) normalize() error {
 
 	var sources []*ast.Source
 	for _, filename := range cfg.SchemaFilename {
-		sources = append(sources, &ast.Source{Name: filename, Input:  cfg.SchemaStr[filename]})
+		sources = append(sources, &ast.Source{Name: filename, Input: cfg.SchemaStr[filename]})
 	}
 
 	var err *gqlerror.Error

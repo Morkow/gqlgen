@@ -15,9 +15,9 @@ func TestContains(t *testing.T) {
 	if runtime.GOOS == "windows" {
 		build.Default.GOPATH = `C:\go;C:\Users\user\go`
 
-		assert.True(t, Contains(`C:\go\src\github.com\vektah\gqlgen`))
+		assert.True(t, Contains(`C:\go\src\github.com\Morkow\gqlgen`))
 		assert.True(t, Contains(`C:\go\src\fpp`))
-		assert.True(t, Contains(`C:/go/src/github.com/vektah/gqlgen`))
+		assert.True(t, Contains(`C:/go/src/github.com/Morkow/gqlgen`))
 		assert.True(t, Contains(`C:\Users\user\go\src\foo`))
 		assert.False(t, Contains(`C:\tmp`))
 		assert.False(t, Contains(`C:\Users\user`))
@@ -25,7 +25,7 @@ func TestContains(t *testing.T) {
 	} else {
 		build.Default.GOPATH = "/go:/home/user/go"
 
-		assert.True(t, Contains("/go/src/github.com/vektah/gqlgen"))
+		assert.True(t, Contains("/go/src/github.com/Morkow/gqlgen"))
 		assert.True(t, Contains("/go/src/foo"))
 		assert.True(t, Contains("/home/user/go/src/foo"))
 		assert.False(t, Contains("/tmp"))

@@ -1,4 +1,4 @@
-required = ["github.com/vektah/dataloaden"]
+required = ["github.com/Morkow/dataloaden"]
 
 [[constraint]]
   branch = "master"

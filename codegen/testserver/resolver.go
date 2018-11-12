@@ -1,12 +1,12 @@
-//go:generate gorunpkg github.com/99designs/gqlgen
+//go:generate gorunpkg github.com/Morkow/gqlgen
 
 package testserver
 
 import (
 	context "context"
 
-	introspection1 "github.com/99designs/gqlgen/codegen/testserver/introspection"
-	invalid_packagename "github.com/99designs/gqlgen/codegen/testserver/invalid-packagename"
+	introspection1 "github.com/Morkow/gqlgen/codegen/testserver/introspection"
+	invalid_packagename "github.com/Morkow/gqlgen/codegen/testserver/invalid-packagename"
 )
 
 type Resolver struct{}
