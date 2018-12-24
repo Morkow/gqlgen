@@ -9,7 +9,7 @@ import (
 
 func MarshalFloat(f float64) Marshaler {
 	return WriterFunc(func(w io.Writer) {
-		io.WriteString(w, fmt.Sprintf("%f", f))
+		io.WriteString(w, strconv.FormatFloat(f, 'f', -1, 64))
 	})
 }
 
